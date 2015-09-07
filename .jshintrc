@@ -2,7 +2,7 @@
     "maxerr"        : 50, // maximum amount of warnings JSHint will produce before giving up
     "bitwise"       : false,  // This option prohibits the use of bitwise operators
     "camelcase"     : true,  // camelCase notation
-    "curly"         : true, // err: use { }'s
+    "curly"         : true, // err: use curly braquets
     "eqeqeq"        : true, // === instead ==
     "es3"           : false, // ...for legacy IE compatibility
     "forin"         : true, // err: check obj.hasOwnProperty(key)
@@ -44,7 +44,7 @@
     "devel"         : true,  // console, alert, etc. 
     "esnext"        : true, // ES6 allow
     "unused"        : true, // unused parameters, variables, etc
-    "strict"        : false, // err: need "use strict"
+    "strict"        : false, // err: need use strict
     "couch"         : true, // defines globals exposed by CouchDB
     "jasmine"       : true, // defines globals exposed by Jasmine JS
     "phantom"       : true, // defines globals exposed by phantomJS
