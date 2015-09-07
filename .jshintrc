@@ -1,38 +1,35 @@
 {
     "maxerr"        : 50, // maximum amount of warnings JSHint will produce before giving up
-    "bitwise"       : false,
-    "camelcase"     : true,
+    "bitwise"       : false,  // This option prohibits the use of bitwise operators
+    "camelcase"     : true,  // camelCase notation
     "curly"         : true, // err: use { }'s
-    "eqeqeq"        : true,
+    "eqeqeq"        : true, // === instead ==
     "es3"           : false, // ...for legacy IE compatibility
     "forin"         : true, // err: check obj.hasOwnProperty(key)
     "freeze"        : true, // err: don't modify native prototypes
-    "immed"         : true,
     "indent"        : 4, // err: expected indent of 4, found 2
-    "latedef"       : "nofunc",
-    "newcap"        : true,
-    "noarg"         : true,
-    "noempty"       : true,
-    "nonbsp"        : true,
-    "nonew"         : true,
-    "plusplus"      : false,
-    "undef"         : true,
-    "maxparams"     : 15,
-    "maxdepth"      : 5,
-    "maxstatements" : 40,
-    "maxcomplexity" : 10,
-    "maxlen"        : 400,
-    "asi"           : false,
-    "boss"          : false,
-    "debug"         : false,
-    "eqnull"        : true,
-    "esnext"        : false,
-    "evil"          : false,
-    "expr"          : false,
-    "funcscope"     : false,
-    "globalstrict"  : false,
-    "iterator"      : false,
-    "lastsemic"     : false,
+    "latedef"       : "nofunc", // prohibits the use of a variable before it was defined.
+    "noarg"         : true, // prohibits the use of arguments.caller and arguments.callee
+    "noempty"       : true, // warns when you have an empty block in your code.
+    "nonbsp"        : true, // warns about "non-breaking whitespace" characters
+    "nonew"         : true, // prohibits the use of constructor functions for side-effects
+    "plusplus"      : false, // prohibits the use of unary increment and decrement operators
+    "undef"         : true,  // prohibits the use of explicitly undeclared variables
+    "maxparams"     : 15, // max number of parameters
+    "maxdepth"      : 5,  // control how nested do you want your blocks to be
+    "maxstatements" : 40,  // set the max number of statements allowed per function
+    "maxcomplexity" : 10, // measures the number of linearly independent paths through a program's source code.
+    "asi"           : false, // missing ;
+    "boss"          : true, // warning about loop without the () on the iteration declaration
+    "debug"         : false, // debugger statement forgotten
+    "eqnull"        : true, // suppresses warnings about == null comparisons
+    "esnext"        : false, // ES6 syntax
+    "evil"          : false,  // eval is evil
+    "expr"          : false, // suppresses warnings about the use of expressions
+    "funcscope"     : false, // suppresses warnings about declaring variables inside of control structures while accessing them later from the outside
+    "globalstrict"  : false, // functions to run in ECMAScript 5's strict mode
+    "iterator"      : false, // suppresses warnings about the legacy __iterator__ property
+    "lastsemic"     : true,  // suppresses warnings about missing semicolons, but only when the semicolon is omitted for the last statement in a one-line block
     "laxbreak"      : false,
     "laxcomma"      : false,
     "loopfunc"      : true,
