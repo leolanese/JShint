@@ -1,5 +1,5 @@
 {
-    "maxerr"        : 10,
+    "maxerr"        : 50, // maximum amount of warnings JSHint will produce before giving up
     "bitwise"       : false,
     "camelcase"     : true,
     "curly"         : true, // err: use { }'s
