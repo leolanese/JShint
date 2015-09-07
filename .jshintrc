@@ -2,13 +2,13 @@
     "maxerr"        : 10,
     "bitwise"       : false,
     "camelcase"     : true,
-    "curly"         : true,
+    "curly"         : true, // err: use { }'s
     "eqeqeq"        : true,
-    "es3"           : false,
-    "forin"         : true,
-    "freeze"        : true,
+    "es3"           : false, // ...for legacy IE compatibility
+    "forin"         : true, // err: check obj.hasOwnProperty(key)
+    "freeze"        : true, // err: don't modify native prototypes
     "immed"         : true,
-    "indent"        : 4,
+    "indent"        : 4, // err: expected indent of 4, found 2
     "latedef"       : "nofunc",
     "newcap"        : true,
     "noarg"         : true,
@@ -17,11 +17,11 @@
     "nonew"         : true,
     "plusplus"      : false,
     "undef"         : true,
-    "maxparams"     : 10,
+    "maxparams"     : 15,
     "maxdepth"      : 5,
     "maxstatements" : 40,
-    "maxcomplexity" : 8,
-    "maxlen"        : 200,
+    "maxcomplexity" : 10,
+    "maxlen"        : 400,
     "asi"           : false,
     "boss"          : false,
     "debug"         : false,
@@ -36,7 +36,7 @@
     "laxbreak"      : false,
     "laxcomma"      : false,
     "loopfunc"      : true,
-    "moz"           : false,
+    "moz"           : true,
     "multistr"      : false,
     "notypeof"      : false,
     "proto"         : false,
@@ -48,28 +48,31 @@
     "noyield"       : false,
     "browser"       : true,
     "node"          : true,
-    "devel"         : false,
-    "esnext"        : true,
-    "moz"           : true,
+    "devel"         : true,  // console, alert, etc. 
+    "esnext"        : true, // ES6 allow
     "unused"        : true,
-    "strict"        : false,
-
-  "globals": {
-        "angular"   : false,
-        "$"         : false,
-        "jsSHA"     : false,
-        "console"   : false,
-        "jasmine"   : false,
-        "jquery"    : false,
-        "Api"       : false,
-        "console"   : false,
-        "after"     : false,
-        "afterEach" : false,
-        "before"    : false,
-        "beforeEach": false,
-        "spyOn"     : false,
-        "it"        : false,
-        "describe"  : false,
-        "expect"    : false
+    "strict"        : false, // err: need "use strict"
+    "globals": {
+      "angular"   : false,
+      "$"         : false,
+      "jsSHA"     : false,
+      "console"   : false,
+      "jasmine"   : false,
+      "jquery"    : false,
+      "Api"       : false,
+      "console"   : false,
+      "expect"    : false,
+      "describe"  : false,
+      "xdescribe" : false,
+      "runs"      : false,
+      "waitsFor"  : false,
+      "it"        : false,
+      "xit"       : false,
+      "beforeEach": false,
+      "inject"    : false,
+      "spyOn"     : false,
+      "_"         : false,
+      "moment"    : false,
+      "URI"       : false
     }
 }
