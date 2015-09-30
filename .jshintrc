@@ -48,6 +48,7 @@
     "couch"         : true, // defines globals exposed by CouchDB
     "jasmine"       : true, // defines globals exposed by Jasmine JS
     "phantom"       : true, // defines globals exposed by phantomJS
+    "es5"           : true, // Allow ECMAScript 5 syntax.
     
     "globals": {
       "angular"   : false,
